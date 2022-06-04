@@ -1,12 +1,14 @@
 import './App.css';
+import Navbar from './Components/Navbar';
+import Splash from './Components/Splash';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>Hello World</h1>
-       <p>This is just a test of my domain hosting</p>
-      </header>
+    <Navbar />
+      <div className="pages">
+      <Splash />
+      </div>
     </div>
   );
 }
