@@ -1,6 +1,26 @@
+import {CodeSquare} from 'react-bootstrap-icons'
+import {Controller} from 'react-bootstrap-icons'
+import { Flag } from 'react-bootstrap-icons'
+
 
 export default function Splash(){
     return(
-        <h1>this is just a placeolder for when content becomes available for this page</h1>
+        <div id="splash">
+        <h1 id="Name"> I am Robin Kelsick II</h1>
+        <ul id="flip">
+            <li id='developer'>
+                Developer
+                <CodeSquare color='white' />
+            </li>
+            <li id='gamer'>
+                Gamer
+                <Controller color='white' />
+            </li>
+            <li id='marine'>
+                Marine
+                <Flag color='white' />
+            </li>
+        </ul>
+        </div>
     )
 }

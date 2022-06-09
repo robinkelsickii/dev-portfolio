@@ -5,7 +5,7 @@ import Splash from './Components/Splash';
 function App() {
   return (
     <div className="App">
-    <Navbar />
+    {/* <Navbar /> */}
       <div className="pages">
       <Splash />
       </div>
