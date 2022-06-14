@@ -1,3 +1,13 @@
 body, html{
-    background-color: black;
+    background-color: white;
+}
+
+.Me{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.Me:hover{
+    opacity: 0.3;
 }
