@@ -7,9 +7,9 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {/* Importing NavBar */}
+      {/* Importing NavBar and passing the state as props */}
       <div>
-        <NavBar />
+        <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
 
       {/* Hero Section with Background Image */}
@@ -40,26 +40,6 @@ export default function Home() {
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-      </div>
-
-      {/* Mobile Dropdown Menu */}
-      <div
-        className={`lg:hidden absolute top-16 left-1/2 transform -translate-x-1/2 w-64 bg-white shadow-md ${
-          menuOpen ? "block" : "hidden"
-        } z-50`} // Set z-index to ensure it's above the hero content
-      >
-        <a href="#home" className="block px-4 py-2 text-base">
-          Home
-        </a>
-        <a href="#about" className="block px-4 py-2 text-base">
-          About Me
-        </a>
-        <a href="#portfolio" className="block px-4 py-2 text-base">
-          Portfolio
-        </a>
-        <a href="#contact" className="block px-4 py-2 text-base">
-          Contact
-        </a>
       </div>
     </div>
   );

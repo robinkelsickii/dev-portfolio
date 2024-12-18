@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
+import { FC } from "react";
 
-const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+interface NavBarProps {
+  menuOpen: boolean;
+  setMenuOpen: (open: boolean) => void;
+}
 
+const NavBar: FC<NavBarProps> = ({ menuOpen, setMenuOpen }) => {
   // Toggle the dropdown menu on mobile
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -85,11 +88,6 @@ const NavBar = () => {
           Contact
         </a>
       </div>
-
-      {/* Dark Overlay between the menu and background */}
-      {menuOpen && (
-        <div className="lg:hidden fixed top-0 left-0 right-0 bottom-0 bg-black opacity-50 z-40"></div>
-      )}
     </div>
   );
 };
