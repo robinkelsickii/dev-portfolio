@@ -26,9 +26,10 @@ export default function AboutPage() {
             Hi, I’m Robin! As you might have guessed, I’m a proud band geek and
             an enthusiastic developer. Born in Jacksonville, FL, I spent much of
             my life moving around as a military brat, following my Navy dad’s
-            footsteps. From an early age, I was inspired by watching him take
-            apart computers and programs to make them his own, which sparked my
-            passion for programming.
+            footsteps and eventually spending 6 years a Marine myself. From an
+            early age, I was inspired by watching him take apart computers and
+            programs to make them his own, which sparked my passion for
+            programming.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 pb-4    ">
             Today, I channel that passion into creating meaningful projects. I

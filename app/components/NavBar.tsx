@@ -1,5 +1,7 @@
 "use client";
+
 import { FC } from "react";
+import Link from "next/link";
 
 interface NavBarProps {
   menuOpen: boolean;
@@ -16,23 +18,25 @@ const NavBar: FC<NavBarProps> = ({ menuOpen, setMenuOpen }) => {
     <div className="relative">
       <div className="navbar bg-white fixed top-0 left-0 right-0 z-10 shadow-md">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">My Portfolio</a>
+          <Link href="/" className="btn btn-ghost text-xl">
+            My Portfolio
+          </Link>
         </div>
 
         {/* Desktop Navigation Links */}
         <div className="flex-none hidden lg:flex space-x-4">
-          <a href="#home" className="btn btn-ghost text-base">
+          <Link href="/" className="btn btn-ghost text-base">
             Home
-          </a>
-          <a href="#about" className="btn btn-ghost text-base">
+          </Link>
+          <Link href="/about" className="btn btn-ghost text-base">
             About Me
-          </a>
-          <a href="#portfolio" className="btn btn-ghost text-base">
+          </Link>
+          <Link href="/portfolio" className="btn btn-ghost text-base">
             Portfolio
-          </a>
-          <a href="#contact" className="btn btn-ghost text-base">
+          </Link>
+          <Link href="/contact" className="btn btn-ghost text-base">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Icon */}
@@ -75,18 +79,18 @@ const NavBar: FC<NavBarProps> = ({ menuOpen, setMenuOpen }) => {
             &times;
           </button>
         </div>
-        <a href="#home" className="block px-4 py-2 text-base">
+        <Link href="/" className="block px-4 py-2 text-base">
           Home
-        </a>
-        <a href="#about" className="block px-4 py-2 text-base">
+        </Link>
+        <Link href="/about" className="block px-4 py-2 text-base">
           About Me
-        </a>
-        <a href="#portfolio" className="block px-4 py-2 text-base">
+        </Link>
+        <Link href="/portfolio" className="block px-4 py-2 text-base">
           Portfolio
-        </a>
-        <a href="#contact" className="block px-4 py-2 text-base">
+        </Link>
+        <Link href="/contact" className="block px-4 py-2 text-base">
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );
