@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Importing NavBar and passing the state as props */}
-      <div>
+      <div className="shadow-2xl">
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
 
@@ -31,11 +31,10 @@ export default function Home() {
         {/* Hero Content */}
         <div className="hero-content text-neutral-content text-center z-20 relative">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <h1 className="mb-5 text-5xl font-bold">Hi! I'm Robin!</h1>
             <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              I'm a Kentucky-based freelance web developer. If you dream it, we
+              can both build it together. Check out my portfolio!
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>
