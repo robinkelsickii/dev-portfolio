@@ -1,16 +1,12 @@
 <script>
-import DarkMode from './components/DarkMode.vue'
-
 export default {
   name: 'App',
-  components: { DarkMode },
+  components: {},
 }
 </script>
 
 <template>
-  <div class="home flex items-center justify-center h-screen">
-    <DarkMode />
-  </div>
+  <div class="home flex items-center justify-center h-screen"></div>
 </template>
 
 <style>
