@@ -10,7 +10,7 @@ export default {
     <div class="hero bg-base-200 min-h-screen">
       <div class="hero-content text-center">
         <div class="max-w-md">
-          <h1 class="text-5xl font-bold">Hi! I'm Robin</h1>
+          <h1 class="typingEffect text-5.4xl font-roboto-mono">Hi! I'm Robin!</h1>
           <p class="py-6">
             I'm a full-stack software developer from Kentucky and we can build anything from nothing
             if we put our minds to it. Grab your lens and take a look into my life and my passion
@@ -85,5 +85,26 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.typingEffect {
+  width: 0;
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: typing 2s steps(30) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.font-roboto-mono {
+  font-family: 'Roboto Mono', monospace;
 }
 </style>
