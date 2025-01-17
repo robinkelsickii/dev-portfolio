@@ -6,7 +6,9 @@ export default {
 </script>
 
 <template>
-  <div class="home flex items-center justify-center h-screen"></div>
+  <div class="home flex items-center justify-center h-screen">
+    <div class=""></div>
+  </div>
 </template>
 
 <style>
