@@ -1,7 +1,9 @@
 <script>
+import AboutMe from './components/AboutMe.vue'
+
 export default {
   name: 'App',
-  components: {},
+  components: { AboutMe },
 }
 </script>
 
@@ -11,10 +13,10 @@ export default {
       <div class="hero-content text-center">
         <div class="max-w-md">
           <h1 class="typingEffect text-5.4xl font-roboto-mono">Hi! I'm Robin!</h1>
-          <p class="py-6">
-            I'm a full-stack software developer from Kentucky and we can build anything from nothing
-            if we put our minds to it. Grab your lens and take a look into my life and my passion
-            projects and let's make your dream become a reality.
+          <p class="py-6 font-roboto-mono">
+            I'm a full-stack software developer from Kentucky. Together, we can build anything from
+            scratch if we put our minds to it. Explore my life and passion projects, and let's turn
+            your dream into reality.
           </p>
           <a class="btn btn-ghost">
             <svg
@@ -76,6 +78,7 @@ export default {
       </div>
     </div>
   </div>
+  <AboutMe />
 </template>
 
 <style>
