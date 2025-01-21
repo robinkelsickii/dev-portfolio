@@ -1,5 +1,4 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -15,7 +14,31 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['fs', 'path'], // Exclude fs and path from the bundle
+      external: [
+        'fs',
+        'path',
+        'url',
+        'util',
+        'perf_hooks',
+        'module',
+        'crypto',
+        'child_process',
+        'http',
+        'https',
+        'tty',
+        'net',
+        'events',
+        'stream',
+        'os',
+        'dns',
+        'assert',
+        'v8',
+        'worker_threads',
+        'zlib',
+        'buffer',
+        'tls',
+        'querystring',
+      ],
     },
   },
 })
