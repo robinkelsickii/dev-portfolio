@@ -1,6 +1,10 @@
+# netlify.toml
 [build]
   publish = "dist"
   command = "npm run build"
+
+[context.production.environment]
+  NODE_VERSION = "16.14.0"
 
 [[redirects]]
   from = "/*"
