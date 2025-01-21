@@ -7,7 +7,7 @@ export default {
         {
           id: 1,
           name: 'Bird Watching',
-          image: '/src/assets/birdwatchingScreenshot.png',
+          image: '/dist/assets/birdwatchingScreenshot.png',
           description:
             "This is my first attempt at any website that I have ever done so it is a bit rough but it shows where I've been.",
           stack: ['HTML', 'CSS', 'JavaScript'],
@@ -17,7 +17,7 @@ export default {
         {
           id: 2,
           name: 'Bouncing Balls',
-          image: '/src/assets/bouncingBallsScreenshot.png',
+          image: '/dist/assets/bouncingBallsScreenshot.png',
           description:
             'I decided to take on the bouncing balls from Microsoft Learn. You simply open the site and see balls flying on the page, changing color on any contact.',
           stack: ['HTML', 'CSS', 'JavaScript'],
@@ -27,7 +27,7 @@ export default {
         {
           id: 3,
           name: 'The Mind Reader',
-          image: '/src/assets/mindReaderScreenshot.png',
+          image: '/dist/assets/mindReaderScreenshot.png',
           description:
             'This website is supposed to have you think of a number, perform a calculation, then guess that number. Naturally it was my earlier days so it is a bit rough around the edges. Still it was fun because I love complex math calculations in programming.',
           stack: ['HTML', 'CSS', 'JavaScript'],
@@ -37,7 +37,7 @@ export default {
         {
           id: 4,
           name: 'Silly Stories',
-          image: '/src/assets/sillyStoryScreenshot.png',
+          image: '/dist/assets/sillyStoryScreenshot.png',
           description:
             'Here, I created a little silly story that takes any input that you put in and adlibs it into a silly story.',
           stack: ['HTML', 'CSS', 'JavaScript'],
@@ -47,7 +47,7 @@ export default {
         {
           id: 5,
           name: 'Alarm Clock',
-          image: '/src/assets/alarmClockScreenShot.png',
+          image: '/dist/assets/alarmClockScreenShot.png',
           description:
             'This alarm clock displays the relative time to you based on your location. It also doubles as an alarm clock that sends a notification to your browser when it is time to go.',
           stack: ['HTML', 'CSS', 'JavaScript'],
@@ -57,7 +57,7 @@ export default {
         {
           id: 6,
           name: 'Url Shortener',
-          image: '/src/assets/urlShortenerScreenshot.png',
+          image: '/dist/assets/urlShortenerScreenshot.png',
           description:
             'This is one of my more recent projects using Vue. It was a way for me to get back into my skills after taking a break from programming. It is a simple site that uses an API to shorten a url so that you don"t have to type in a super long one.',
           stack: ['Vue 3', 'Axios', 'is.gd Api', 'JavaScript'],

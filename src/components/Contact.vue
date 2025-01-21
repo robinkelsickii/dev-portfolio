@@ -23,7 +23,7 @@ export default {
   <div class="container mx-auto p-6">
     <h2 class="text-4xl font-bold mb-6 text-center">Contact Me</h2>
     <div class="contact-form bg-white p-6 rounded-lg shadow-lg">
-      <form @submit.prevent="submitForm">
+      <form @submit.prevent="submitForm" netlify>
         <div class="form-group mb-4">
           <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
           <input
