@@ -1,10 +1,11 @@
 <script>
 import AboutMe from './components/AboutMe.vue'
+import Contact from './components/Contact.vue'
 import Projects from './components/Projects.vue'
 
 export default {
   name: 'App',
-  components: { AboutMe, Projects },
+  components: { AboutMe, Projects, Contact },
 }
 </script>
 
@@ -81,6 +82,7 @@ export default {
   </div>
   <AboutMe />
   <Projects />
+  <Contact />
 </template>
 
 <style>

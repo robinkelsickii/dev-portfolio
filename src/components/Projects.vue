@@ -34,6 +34,47 @@ export default {
           githubLink: 'https://github.com/robinkelsickii/mindreaders',
           liveDemo: 'https://robinkelsickii.github.io/mindreaders/',
         },
+        {
+          id: 4,
+          name: 'Silly Stories',
+          image: '/src/assets/sillyStoryScreenshot.png',
+          description:
+            'Here, I created a little silly story that takes any input that you put in and adlibs it into a silly story.',
+          stack: ['HTML', 'CSS', 'JavaScript'],
+          githubLink: 'https://github.com/robinkelsickii/silly-story',
+          liveDemo: 'https://robinkelsickii.github.io/silly-story/',
+        },
+        {
+          id: 5,
+          name: 'Alarm Clock',
+          image: '/src/assets/alarmClockScreenShot.png',
+          description:
+            'This alarm clock displays the relative time to you based on your location. It also doubles as an alarm clock that sends a notification to your browser when it is time to go.',
+          stack: ['HTML', 'CSS', 'JavaScript'],
+          githubLink: 'https://github.com/robinkelsickii/alarm-clock',
+          liveDemo: 'https://robinkelsickii.github.io/alarm-clock/',
+        },
+        {
+          id: 6,
+          name: 'Url Shortener',
+          image: '/src/assets/urlShortenerScreenshot.png',
+          description:
+            'This is one of my more recent projects using Vue. It was a way for me to get back into my skills after taking a break from programming. It is a simple site that uses an API to shorten a url so that you don"t have to type in a super long one.',
+          stack: ['Vue 3', 'Axios', 'is.gd Api', 'JavaScript'],
+          githubLink: 'https://github.com/robinkelsickii/url-shortner',
+          liveDemo: 'https://bobinos-url-shortner.netlify.app/',
+        },
+        {
+          id: 6,
+          name: 'Mind Mingle',
+          image:
+            'https://fakeimg.pl/600x400?text=This+Project+is+in+progress&font=lobster&font_size=36',
+          description:
+            'My first project That I decided to go live with one day. It is a site that will connect people struggling with mental illness with other people, resources, and a plan to use an AI therapist that will not replace a real therapist. It is to provide insight and to help navigate thoughts.',
+          stack: ['Mongo', 'Express', 'React', 'NodeJs'],
+          githubLink: 'https://github.com/robinkelsickii/Mind-Mingle/tree/main/client',
+          liveDemo: 'https://github.com/robinkelsickii/Mind-Mingle/tree/main/client',
+        },
       ],
     }
   },
@@ -70,6 +111,10 @@ export default {
           </div>
         </div>
       </div>
+      <p class="text-xl">
+        I have quite a bit more projects, some of them even apps. You can see where I failed and
+        where I learned. I am very passionate about them so definitely take a look.
+      </p>
     </div>
   </div>
 </template>
