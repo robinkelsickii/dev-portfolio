@@ -9,7 +9,7 @@ export default {
     <div class="flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 p-4">
         <img
-          src="/dist/assets/ai-portrait-BH2rvuY7.png"
+          src="/public/assets/ai-portrait.png"
           alt="An Ai Portrait of Me"
           class="rounded-lg shadow-lg opacity-50"
         />
