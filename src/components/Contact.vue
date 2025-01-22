@@ -1,69 +1,75 @@
 <script>
 export default {
   name: 'Contact',
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        message: '',
-      },
-    }
-  },
-  methods: {
-    submitForm() {
-      // Handle form submission
-      console.log('Form submitted:', this.form)
-    },
-  },
 }
 </script>
 
 <template>
-  <div class="container mx-auto p-6">
-    <h2 class="text-4xl font-bold mb-6 text-center">Contact Me</h2>
-    <div class="contact-form bg-white p-6 rounded-lg shadow-lg">
-      <form @submit.prevent="submitForm" netlify>
-        <div class="form-group mb-4">
-          <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
-          <input
-            type="text"
-            id="name"
-            v-model="form.name"
-            required
-            class="w-full p-2 border border-gray-300 rounded"
-          />
+  <section class="">
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div class="lg:col-span-2 lg:py-12">
+          <p class="max-w-xl text-lg">
+            If you would like to get in touch with me, leave your name email, and a message. I
+            respond within 24 hours.
+          </p>
         </div>
-        <div class="form-group mb-4">
-          <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
-          <input
-            type="email"
-            id="email"
-            v-model="form.email"
-            required
-            class="w-full p-2 border border-gray-300 rounded"
-          />
-        </div>
-        <div class="form-group mb-4">
-          <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
-          <textarea
-            id="message"
-            v-model="form.message"
-            required
-            class="w-full p-2 border border-gray-300 rounded"
-          ></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">
-          Send
-        </button>
-      </form>
-    </div>
-  </div>
-</template>
 
-<style scoped>
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-</style>
+        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <form name="contact" method="post" data-netlify="true" class="space-y-4">
+            <div>
+              <label class="sr-only" for="name">Name</label>
+              <input
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Name"
+                type="text"
+                id="name"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Email address"
+                  type="email"
+                  id="email"
+                />
+              </div>
+
+              <div>
+                <label class="sr-only" for="phone">Phone</label>
+                <input
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Phone Number"
+                  type="tel"
+                  id="phone"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="sr-only" for="message">Message</label>
+
+              <textarea
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Message"
+                rows="8"
+                id="message"
+              ></textarea>
+            </div>
+
+            <div class="mt-4">
+              <button
+                type="submit"
+                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+              >
+                Send Enquiry
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
