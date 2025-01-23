@@ -16,7 +16,7 @@ export default {
         </div>
 
         <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-          <form name="contact" method="post" data-netlify="true" class="space-y-4">
+          <form action="https://formspree.io/f/xeoeqglr" method="POST" class="space-y-4">
             <div>
               <label class="sr-only" for="name">Name</label>
               <input
@@ -24,6 +24,7 @@ export default {
                 placeholder="Name"
                 type="text"
                 id="name"
+                name="name"
               />
             </div>
 
@@ -35,6 +36,7 @@ export default {
                   placeholder="Email address"
                   type="email"
                   id="email"
+                  name="email"
                 />
               </div>
 
@@ -45,6 +47,7 @@ export default {
                   placeholder="Phone Number"
                   type="tel"
                   id="phone"
+                  name="phone"
                 />
               </div>
             </div>
@@ -56,6 +59,7 @@ export default {
                 placeholder="Message"
                 rows="8"
                 id="message"
+                name="message"
               ></textarea>
             </div>
 
