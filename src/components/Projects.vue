@@ -88,14 +88,14 @@ export default {
       <div
         v-for="project in projects"
         :key="project.id"
-        class="bg-white rounded-lg shadow-lg overflow-hidden w-full md:w-1/2 lg:w-1/3"
+        class="overflow-hidden w-full md:w-1/2 lg:w-1/3"
       >
-        <div class="flex justify-center items-center h-48 bg-gray-100">
+        <div class="flex justify-center items-center h-48">
           <img :src="project.image" :alt="project.name" class="object-contain h-full pt-2" />
         </div>
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">{{ project.name }}</h2>
-          <p class="text-gray-700 mb-4">{{ project.description }}</p>
+          <p class="mb-4">{{ project.description }}</p>
           <div class="mb-4">
             <span
               v-for="tech in project.stack"

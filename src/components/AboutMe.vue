@@ -8,11 +8,7 @@ export default {
   <div class="container mx-auto p-6">
     <div class="flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 p-4">
-        <img
-          src="/public/assets/ai-portrait.png"
-          alt="An Ai Portrait of Me"
-          class="rounded-lg shadow-lg opacity-50"
-        />
+        <img src="/public/assets/ai-portrait.png" alt="An Ai Portrait of Me" class="opacity-50" />
       </div>
       <div class="md:w-1/2 p-4">
         <h1 class="text-4xl font-bold mb-4 font-roboto-mono">Behind the Code</h1>
