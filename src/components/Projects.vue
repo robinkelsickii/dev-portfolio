@@ -65,7 +65,7 @@ export default {
           liveDemo: 'https://bobinos-url-shortner.netlify.app/',
         },
         {
-          id: 6,
+          id: 7,
           name: 'Mind Mingle',
           image:
             'https://fakeimg.pl/600x400?text=This+Project+is+in+progress&font=lobster&font_size=36',
@@ -84,16 +84,16 @@ export default {
 <template>
   <div class="container mx-auto p-6 mb-16">
     <h1 class="text-4xl font-bold mb-6 text-center">Projects</h1>
-    <div class="flex flex-wrap justify-center gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
         v-for="project in projects"
         :key="project.id"
-        class="overflow-hidden w-full md:w-1/2 lg:w-1/3"
+        class="project-card rounded-lg shadow-lg overflow-hidden"
       >
-        <div class="flex justify-center items-center h-48">
+        <div class="flex justify-center items-center h-48 bg-gray-100">
           <img :src="project.image" :alt="project.name" class="object-contain h-full pt-2" />
         </div>
-        <div class="p-4">
+        <div class="p-4 bg-white bg-opacity-80">
           <h2 class="text-2xl font-bold mb-2">{{ project.name }}</h2>
           <p class="mb-4">{{ project.description }}</p>
           <div class="mb-4">
@@ -116,5 +116,7 @@ export default {
 </template>
 
 <style scoped>
-/* Add any styles specific to this component here */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+}
 </style>

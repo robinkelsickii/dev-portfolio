@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <section class="py-16">
+  <section class="py-16 bg-purple-600">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
         <div class="lg:col-span-2 lg:py-12">
@@ -15,7 +15,7 @@ export default {
           </p>
         </div>
 
-        <div class="rounded-lg p-8 shadow-lg lg:col-span-3 lg:p-12">
+        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
           <form action="https://formspree.io/f/xeoeqglr" method="POST" class="space-y-4">
             <div>
               <label class="sr-only" for="name">Name</label>
