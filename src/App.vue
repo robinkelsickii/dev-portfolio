@@ -82,18 +82,48 @@ export default {
       </div>
     </div>
   </div>
-  <AboutMe id="about" />
-  <Projects id="projects" />
-  <Contact id="contact" />
+  <AboutMe id="about" class="slideIn" />
+  <Projects id="projects" class="slideIn" />
+  <Contact id="contact" class="slideIn" />
 </template>
 
 <style>
+.slideIn {
+  opacity: 0;
+  transform: translateX(-100px); /* Start off-screen */
+  animation: slideInFromLeft 1s forwards;
+}
+
+@keyframes slideInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+  }
+}
+
+.hero-content {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .typingEffect {
+  display: inline-block;
   width: 0;
   overflow: hidden;
   border-right: 2px solid white;
   white-space: nowrap;
-  animation: typing 2s steps(30) forwards;
+  animation:
+    typing 4s steps(40) 1s forwards,
+    blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -105,7 +135,35 @@ export default {
   }
 }
 
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Grows the button slightly when hovered */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.btn-ghost svg {
+  transition:
+    transform 0.3s ease-in-out,
+    fill 0.3s ease-in-out;
+}
+
+.btn-ghost:hover svg {
+  transform: rotate(20deg); /* Slight rotation */
+  fill: #3490dc; /* Change icon color on hover */
+}
+
 .font-roboto-mono {
   font-family: 'Roboto Mono', monospace;
+}
+
+.hero {
+  background: url('path/to/your-image.jpg') center/cover fixed;
+  /* The fixed background creates the parallax effect */
+  background-attachment: fixed;
 }
 </style>
