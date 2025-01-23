@@ -88,7 +88,7 @@ export default {
       <div
         v-for="project in projects"
         :key="project.id"
-        class="rounded-lg shadow-lg overflow-hidden w-full md:w-1/2 lg:w-1/3"
+        class="overflow-hidden w-full md:w-1/2 lg:w-1/3"
       >
         <div class="flex justify-center items-center h-48">
           <img :src="project.image" :alt="project.name" class="object-contain h-full pt-2" />
