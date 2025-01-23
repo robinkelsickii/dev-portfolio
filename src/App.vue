@@ -2,15 +2,17 @@
 import AboutMe from './components/AboutMe.vue'
 import Contact from './components/Contact.vue'
 import Projects from './components/Projects.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
-  components: { AboutMe, Projects, Contact },
+  components: { AboutMe, Projects, Contact, Navbar },
 }
 </script>
 
 <template>
-  <div class="home flex items-center justify-center h-screen">
+  <Navbar />
+  <div class="home flex items-center justify-center h-screen" id="home">
     <div class="hero bg-base-200 min-h-screen">
       <div class="hero-content text-center">
         <div class="max-w-md">
@@ -80,20 +82,12 @@ export default {
       </div>
     </div>
   </div>
-  <AboutMe />
-  <Projects />
-  <Contact />
+  <AboutMe id="about" />
+  <Projects id="projects" />
+  <Contact id="contact" />
 </template>
 
 <style>
-html,
-body,
-#app {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .typingEffect {
   width: 0;
   overflow: hidden;
