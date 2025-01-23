@@ -82,7 +82,7 @@ export default {
 </script>
 
 <template>
-  <div class="container mx-auto p-6">
+  <div class="container mx-auto p-6 mb-16">
     <h1 class="text-4xl font-bold mb-6 text-center">Projects</h1>
     <div class="flex flex-wrap justify-center gap-6">
       <div
@@ -111,10 +111,6 @@ export default {
           </div>
         </div>
       </div>
-      <p class="text-xl">
-        I have quite a bit more projects, some of them even apps. You can see where I failed and
-        where I learned. I am very passionate about them so definitely take a look.
-      </p>
     </div>
   </div>
 </template>
