@@ -335,9 +335,10 @@
 
         <span
           v-if="copied"
-          class="ml-2 bg-black bg-opacity-75 text-white px-2 py-1 rounded inline-block h-8"
-          >Copied Username!</span
+          class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-75 text-white px-2 py-1 rounded z-50"
         >
+          Copied Username!
+        </span>
       </div>
     </div>
     <img
