@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-start justify-start h-screen w-full mx-16 my-16">
+  <div class="flex items-start justify-start h-screen w-full mx-16 my-16 font-smooch-sans">
     <div class="ms-16">
       <p class="text-base-800 text-7xl typingEffect">Hello, I'm Robin!</p>
       <div class="flex flex-col mt-8">
@@ -372,7 +372,8 @@ export default {
 </script>
 
 <style scoped>
-/* Apply smooth transition for all transformations, background-color, and text color */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
 a,
 button {
   transition:
@@ -381,32 +382,27 @@ button {
     color 0.4s ease-in-out;
 }
 
-/* Hover effect for the links and buttons */
 a:hover,
 button:hover {
-  transform: rotate(-5deg) scale(1.1); /* Tilt and pop effect */
-  background-color: #3b82f6; /* Tailwind blue for background color change */
-  color: white; /* Change text/icon color to white */
+  transform: rotate(-5deg) scale(1.1);
+  color: white;
 }
 
-/* Optional: You can also apply a default transform state for these elements */
 a,
 button {
   transform: scale(1); /* Normal state without any transformation */
 }
 
-/* Additional styling to make the icons and buttons look nice */
 a,
 button {
   display: inline-block;
   padding: 10px;
   border-radius: 5px;
-  color: black; /* Default color */
-  text-decoration: none; /* Remove underline from links */
-  background-color: transparent; /* Default transparent background */
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-/* Ensure proper spacing between items */
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -431,7 +427,6 @@ button {
   height: 2.5rem;
 }
 
-/* Additional optional hover effects for accessibility */
 a:focus,
 button:focus {
   outline: none;
@@ -439,12 +434,24 @@ button:focus {
 }
 
 .typingEffect {
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret 0.75s step-end infinite;
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid black;
+  position: relative;
+  width: 0;
+  max-width: fit-content;
+  animation: typing 3s steps(50, end) forwards;
+}
+
+.typingEffect::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: whitesmoke;
+  animation: blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -452,17 +459,24 @@ button:focus {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 17ch;
   }
 }
 
 @keyframes blink-caret {
   from,
   to {
-    border-color: transparent;
+    background-color: transparent;
   }
   50% {
-    border-color: black;
+    background-color: whitesmoke;
   }
+}
+
+.smooch-sans {
+  font-family: 'Smooch Sans', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 </style>
