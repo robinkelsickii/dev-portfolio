@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-start justify-start h-screen">
+  <div class="flex items-start justify-start h-screen w-full mx-16 my-16">
     <div class="ms-16">
-      <p class="text-base-800 text-7xl pt-36 typingEffect">Hello, I'm Robin!</p>
+      <p class="text-base-800 text-7xl typingEffect">Hello, I'm Robin!</p>
       <div class="flex flex-col mt-8">
         <p class="text-3xl ms-8 pb-8">
           <span class="pe-2"
@@ -344,7 +344,7 @@
     <img
       src="/assets/ai-portrait.png"
       alt="An Ai Portrait of Me"
-      class="w-[750px] h-[750px] ms-24 opacity-50 grayscale"
+      class="w-[500px] h-[500px] ms-24 opacity-50 grayscale object-cover aspect-square"
     />
   </div>
 </template>
@@ -444,7 +444,7 @@ button:focus {
     blink-caret 0.75s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid black; /* Cursor width */
+  border-right: 2px solid black;
 }
 
 @keyframes typing {
