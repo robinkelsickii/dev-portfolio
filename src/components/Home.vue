@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-start justify-start h-screen w-full mx-16 my-16 font-smooch-sans">
+  <div
+    class="flex flex-col lg:flex-row items-start justify-start h-screen w-full mx-16 my-16 font-smooch-sans"
+  >
     <div class="ms-0 md:ms-8 lg:ms-16">
       <p class="ms-4 text-base-800 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         Hello, I'm Robin!
@@ -659,9 +661,9 @@
       </div>
     </div>
     <img
+      class="sm:block w-[500px] h-[500px] md:ms-24 opacity-50 grayscale object-cover aspect-square"
       src="/assets/ai-portrait.png"
       alt="An Ai Portrait of Me"
-      class="w-[500px] h-[500px] ms-24 opacity-50 grayscale object-cover aspect-square"
     />
   </div>
 </template>
