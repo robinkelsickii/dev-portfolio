@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-start justify-start h-screen w-full mx-16 my-16 font-smooch-sans">
     <div class="ms-0 md:ms-8 lg:ms-16">
-      <p class="ms-4 text-base-800 text-4xl sm:text-5xl md:text-6xl lg:text-7xl typingEffect">
+      <p class="ms-4 text-base-800 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         Hello, I'm Robin!
       </p>
       <div class="flex flex-col mt-8">
@@ -754,46 +754,6 @@ a:focus,
 button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Adds a glow when focused */
-}
-
-.typingEffect {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  width: 0;
-  max-width: fit-content;
-  animation: typing 3s steps(50, end) forwards;
-}
-
-.typingEffect::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background-color: whitesmoke;
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 17ch;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    background-color: transparent;
-  }
-  50% {
-    background-color: whitesmoke;
-  }
 }
 
 .smooch-sans {
