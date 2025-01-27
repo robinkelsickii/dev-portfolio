@@ -8,7 +8,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: initial;
-  background: linear-gradient(135deg, #6a1b9a, #121212);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    331deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(30, 30, 55, 1) 35%,
+    rgba(0, 81, 97, 1) 100%
+  );
   background-size: cover;
   background-attachment: fixed;
 }
