@@ -35,10 +35,4 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.press-start-2p-regular {
-  font-family: 'Press Start 2P', serif;
-  font-weight: 400;
-  font-style: normal;
-}
 </style>

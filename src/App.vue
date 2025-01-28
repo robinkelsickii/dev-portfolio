@@ -15,23 +15,12 @@ export default {
   <div class="flex flex-col items-center justify-center m-auto">
     <Navbar class="w-full" />
     <Home />
-    <!-- <AboutMe id="about" class="slideIn" /> -->
-    <!-- <Projects id="projects" class="slideIn" /> -->
-    <!-- <Contact id="contact" class="slideIn" /> -->
+    <AboutMe id="about"/>
+    <!-- <Projects id="projects"/> -->
+    <!-- <Contact id="contact"/> -->
   </div>
 </template>
 
 <style>
-.slideIn {
-  opacity: 0;
-  transform: translateX(-100px); /* Start off-screen */
-  animation: slideInFromLeft 1s forwards;
-}
 
-@keyframes slideInFromLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0); /* Move to original position */
-  }
-}
 </style>
