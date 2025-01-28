@@ -1,5 +1,5 @@
 <template>
-  <div class="home flex flex-col gap-y-8 justify-center min-h-screen items-center font-smooch bg-[url(/assets/ai-portrait.png)] bg-center !bg-blend-multiply bg-[rgba(0,0,0,0.5)]">
+  <div class="home flex flex-col gap-y-8 justify-center min-h-screen items-center font-smooch">
     <div class="text-2xl">Hello, I'm</div>
     <div class="text-2xl text-gradient font-press-start lg:text-5xl">Robin Kelsick II</div>
     <div class="text-xl lg:text-2xl">
