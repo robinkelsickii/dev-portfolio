@@ -15,9 +15,9 @@ export default {
   <div class="flex flex-col items-center justify-center m-auto">
     <Navbar class="w-full" />
     <Home />
-    <AboutMe id="about" class="slideIn" />
-    <Projects id="projects" class="slideIn" />
-    <Contact id="contact" class="slideIn" />
+    <!-- <AboutMe id="about" class="slideIn" /> -->
+    <!-- <Projects id="projects" class="slideIn" /> -->
+    <!-- <Contact id="contact" class="slideIn" /> -->
   </div>
 </template>
 
