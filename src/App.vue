@@ -4,10 +4,11 @@ import Contact from './components/Contact.vue'
 import Projects from './components/Projects.vue'
 import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
+import Skills from './components/Skills.vue'
 
 export default {
   name: 'App',
-  components: { Home, AboutMe, Projects, Contact, Navbar },
+  components: { Home, AboutMe, Projects, Contact, Navbar, Skills },
 }
 </script>
 
@@ -16,6 +17,7 @@ export default {
     <Navbar class="w-full" />
     <Home />
     <AboutMe id="about"/>
+    <Skills id = "skills"/>
     <!-- <Projects id="projects"/> -->
     <!-- <Contact id="contact"/> -->
   </div>
