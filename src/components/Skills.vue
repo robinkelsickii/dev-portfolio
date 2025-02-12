@@ -1,4 +1,6 @@
 <template>
+  <div class="mt-32">
+    <div class="text-5xl flex justify-center mb-16">My Tech Skills</div>
   <div class="flex flex-row justify-center gap-6">
     <div
       v-for="skill in skills"
@@ -26,6 +28,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
